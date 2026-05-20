@@ -18,3 +18,17 @@ public class Servidor extends ActivoDigital {
         this.sistemaOperativo = sistemaOperativo;
     }
 }
+
+
+
+
+
+//public double calcularPromedioRiesgo() {
+//    if (activos.isEmpty()) {
+//        return 0.0;
+//    }
+//    return activos.stream()
+//        .mapToDouble(Activo::getNivelRiesgo)
+//        .average()
+//        .orElse(0.0);
+//}

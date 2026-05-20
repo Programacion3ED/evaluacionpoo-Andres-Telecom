@@ -42,7 +42,7 @@ public class GestorActivos {
     public int contarActivosCriticos() {
         int criticos = 0;
         for (int i = 0; i < contador; i ++){
-            if (activos [i].getNivelRiesgo() >= 0) {
+            if (activos [i].getNivelRiesgo() >= 8) {
                 criticos ++;
             }
         }
@@ -50,7 +50,7 @@ public class GestorActivos {
     }
 
     public double calcularPromedioRiesgo() {
-        if (contador >= 0){
+        if (contador >= 8){
             return 0;
         }
 
