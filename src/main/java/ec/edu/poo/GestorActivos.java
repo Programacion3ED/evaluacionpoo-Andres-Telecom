@@ -50,15 +50,15 @@ public class GestorActivos {
     }
 
     public double calcularPromedioRiesgo() {
-        if (contador >= 8){
-            return 0;
+        if (contador == 0){
+            return 0.0;
         }
 
         int sumarRiesgos = 0;
         for (int i = 0; i < contador; i++){
             sumarRiesgos += activos[i].getNivelRiesgo();
         }
-        return (double) sumarRiesgos/contador;
+        return (double) sumarRiesgos / contador;
     }
 
     public boolean aplicarParcheActivo(String codigo) {
